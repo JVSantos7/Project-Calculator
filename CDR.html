@@ -9,33 +9,32 @@
   </head>
   <body>
     <div class="calculadora">
-      <div class="result" id="result">0</div>
+      <div class="result" id="result"></div>
       <div class="buttons">
-        <button class="bg-gray">C</button>
-        <button class="bg-gray"><</button>
-        <button class="bg-gray">%</button>
-        <button class="bg-orange">÷</button>
+        <button class="bg-gray button-C" onclick="clean('C')">C</button>
+        <button class="bg-gray button-y" onclick="back()"><</button>
+        <button class="bg-orange" onclick="insert(' / ')">÷</button>
 
         <button class="bg-light-gray" onclick="insert('7')">7</button>
         <button class="bg-light-gray" onclick="insert('8')">8</button>
         <button class="bg-light-gray" onclick="insert('9')">9</button>
-        <button class="bg-orange">x</button>
+        <button class="bg-orange" onclick="insert(' * ')">x</button>
 
         <button class="bg-light-gray" onclick="insert('4')">4</button>
         <button class="bg-light-gray" onclick="insert('5')">5</button>
         <button class="bg-light-gray" onclick="insert('6')">6</button>
-        <button class="bg-orange">-</button>
+        <button class="bg-orange" onclick="insert(' - ')">-</button>
 
         <button class="bg-light-gray" onclick="insert('1')">1</button>
         <button class="bg-light-gray" onclick="insert('2')">2</button>
         <button class="bg-light-gray" onclick="insert('3')">3</button>
-        <button class="bg-orange">+</button>
+        <button class="bg-orange" onclick="insert(' + ')">+</button>
 
         <button class="bg-light-gray button-zero" onclick="insert('0')">
           0
         </button>
-        <button class="bg-light-gray">,</button>
-        <button class="bg-orange">=</button>
+        <button class="bg-light-gray" onclick="insert('.')">.</button>
+        <button class="bg-orange" onclick="calcular('=')">=</button>
       </div>
     </div>
   </body>

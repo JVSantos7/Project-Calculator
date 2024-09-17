@@ -58,3 +58,9 @@ button:active {
 .bg-orange {
   background-color: orangered;
 }
+.button-C {
+  grid-column: span 2;
+}
+.button-y {
+  grid-column: span 1;
+}
